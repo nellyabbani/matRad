@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2848777975"
+  <configuration build-checksum="4107891199"
                   file="/Users/nelly/Documents/GitHub/matRad/matRadMac.prj"
                   location="/Users/nelly/Documents/GitHub/matRad"
                   name="matRadMac"
-                  preferred-package-location="/home/abbani/Dokumente/MATLAB/bin/C:\home\abbani\Dokumente\matRad\standalone\for_redistribution"
+                  preferred-package-location="/Users/nelly/Documents/GitHub/matRad/standalone/for_redistribution"
+                  preferred-package-type="package.type.app"
                   target="target.ezdeploy.standalone"
                   target-name="Application Compiler">
       <param.appname>matRad</param.appname>
@@ -193,9 +194,14 @@ ${DYLD_LIBRARY_PATH}:MR/v96/runtime/maci64:MR/v96/sys/os/maci64:MR/v96/bin/maci6
          <file>${PROJECT_ROOT}/LIVER.mat</file>
          <file>${PROJECT_ROOT}/PROSTATE.mat</file>
          <file>${PROJECT_ROOT}/TG119.mat</file>
-         <file>${PROJECT_ROOT}/readme_linux.txt</file>
+         <file>${PROJECT_ROOT}/readme_mac.txt</file>
       </fileset.package>
       <fileset.depfun>
+         <file>${PROJECT_ROOT}/BOXPHANTOM.mat</file>
+         <file>${PROJECT_ROOT}/HEAD_AND_NECK.mat</file>
+         <file>${PROJECT_ROOT}/LIVER.mat</file>
+         <file>${PROJECT_ROOT}/PROSTATE.mat</file>
+         <file>${PROJECT_ROOT}/TG119.mat</file>
          <file>${PROJECT_ROOT}/matRad_calcDoseDirect.m</file>
          <file>${PROJECT_ROOT}/matRad_calcDoseFillDij.m</file>
          <file>${PROJECT_ROOT}/matRad_calcDoseInit.m</file>
