@@ -58,7 +58,7 @@ function matRad_compileOmpMCInterface()
         end
     end
     
-    mexCall = ['mex -n -largeArrayDims ' flagstring ' matRad_ompInterface.c'];
+    mexCall = ['mex -largeArrayDims ' flagstring ' matRad_ompInterface.c'];
         
     disp(['Compiler call: ' mexCall]);
     eval(mexCall);
