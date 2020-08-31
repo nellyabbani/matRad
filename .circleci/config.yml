@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Check Scripts
           command: sudo chmod +x MCsquare/bin/MCsquare_linux
-      - matlab/install
+      - matlab/install:
           release: R2020a
       - run:
           name: Verify the matlab and mex scripts are available
