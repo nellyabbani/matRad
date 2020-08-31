@@ -10,8 +10,13 @@ jobs:
       - run:
           name: Check Scripts
           command: sudo chmod +x MCsquare/bin/MCsquare_linux
-      - matlab/install
-          release:  "R2020a" 
+      - matlab/installss
+          release: R2020a
+      - run:
+          name: Verify the matlab and mex scripts are available
+          command: |
+            set -e
+            matlab -batch "assert(strcmp(version('-release'),'2020a'))"
       - matlab/run-command:
           command:  "cd unitTest; matRad_runTests;" 
 orbs:
