@@ -11,9 +11,9 @@ jobs:
           name: Check Scripts
           command: sudo chmod +x MCsquare/bin/MCsquare_linux
       - matlab/install
-          release: R2020a
+          release:  "R2020a" 
       - matlab/run-command:
           command:  "cd unitTest; matRad_runTests;" 
 orbs:
-  matlab: mathworks/matlab@0.1
+  matlab: mathworks/matlab@0.2
   shellcheck: circleci/shellcheck@2.0.0
